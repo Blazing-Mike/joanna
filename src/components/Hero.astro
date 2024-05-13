@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import HeroImage from "../assets/Joanna.jpeg";
+---
+
+<section class="flex justify-evenly items-center my-36 flex-wrap ">
+  <div class="text max-w-lg">
+    <h1 class="text-3xl md:text-6xl font-bold">
+      Master English with Personalized Tutoring
+    </h1>
+    <p class="text-base mt-10">
+      Joanna Wiśniewska, English teacher from fifteen years of experience in
+      teaching students of all ages and levels. Teacher's graduate College of
+      Foreign Languages and English Philology. In addition to teaching English,
+      by many for years I worked with the United States and Great Britain
+      implementing hundreds of projects for English-speaking clients.
+    </p>
+
+    <button>Contact me</button>
+  </div>
+
+  <Image
+    src={HeroImage}
+    alt="Joanna"
+    class="w-48 h-48 md:w-[35rem] md:h-[35rem]"
+  />
+</section>
