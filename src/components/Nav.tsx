@@ -36,7 +36,7 @@ function Navigation() {
       <div
         className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
       >
-        <div className="text-sm lg:flex-grow">
+        <div className="text-sm lg:flex-grow mt-5 md:mt-0">
           <div className="dropdown">
             <button className="dropbtn text-lg">Course Type</button>
             <div className="dropdown-content">
@@ -49,7 +49,7 @@ function Navigation() {
           </div>
           <a
             href="#offer-for-companies"
-            className="block mt-12 lg:inline-block lg:mt-0 text-white mr-4 text-lg"
+            className="block mt-3 lg:inline-block lg:mt-0 text-white mr-4 text-lg"
           >
             Offer for companies
           </a>

@@ -1,23 +1,23 @@
 ---
-import Hero from "../components/Hero.astro";
-import Header from "../components/Header.astro";
-import Pricing from "../components/Pricing.astro";
-import Layout from "../layouts/Layout.astro";
 import AccordionSolutions from "../components/Courses";
-import OfferCompanies from "../components/OfferCompanies.astro";
 import Gallery from "../components/Gallery.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import OfferCompanies from "../components/OfferCompanies.astro";
+import Pricing from "../components/Pricing.astro";
 import Contact from "../components/contact";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
   <Header />
-  <main class=" mx-auto max-w-7xl">
+  <main class="mx-auto max-w-7xl">
     <Hero />
-    <AccordionSolutions client:only/>
-    <Pricing/>
-    <OfferCompanies/>
-    <Gallery/>  
-    <Contact client:only/>
+    <AccordionSolutions client:only />
+    <Pricing />
+    <OfferCompanies />
+    <Gallery />
+    <Contact />
   </main>
 </Layout>
 
