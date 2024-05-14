@@ -4,8 +4,8 @@ function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6">
-      <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
+    <nav className="flex items-center justify-between flex-wrap md:p-16 p-6 w-full">
+      <div className="flex items-center md:justify-between flex-shrink-0 text-white mr-6 lg:mr-72">
         <img
           src="/src/assets/logo.png"
           className="w-100 h-10 mr-2"
@@ -34,11 +34,11 @@ function Navigation() {
         </button>
       </div>
       <div
-        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
+        className={`w-full block flex-grow lg:flex lg:items-center lg:justify-end lg:w-auto ${isOpen ? "block" : "hidden"}`}
       >
-        <div className="text-sm lg:flex-grow mt-5 md:mt-0">
+        <div className="flex flex-col md:flex-row mt-5 md:mt-0 gap-5">
           <div className="dropdown">
-            <button className="dropbtn text-lg">Course Type</button>
+            <button className="dropbtn text-lg text-black">Course Type</button>
             <div className="dropdown-content">
               <a href="index.html#courses">individual</a>
               <a href="index.html#courses"> In a group of 2 to 4 people</a>
@@ -49,28 +49,21 @@ function Navigation() {
           </div>
           <a
             href="#offer-for-companies"
-            className="block mt-3 lg:inline-block lg:mt-0 text-white mr-4 text-lg"
+            className="block mt-3 lg:inline-block lg:mt-0 text-black mr-4 text-lg"
           >
             Offer for companies
           </a>
           <a
             href="#pricing"
-            className="block mt-3 lg:inline-block lg:mt-0 text-white mr-4 text-lg"
+            className="block mt-3 lg:inline-block lg:mt-0 text-black mr-4 text-lg"
           >
             Price list
           </a>
           <a
             href="#gallery"
-            className="block mt-3 lg:inline-block lg:mt-0 text-white mr-4 text-lg"
+            className="block mt-3 lg:inline-block lg:mt-0 text-black mr-4 text-lg"
           >
             Gallery
-          </a>
-        </div>
-        <div>
-          <a href="#contact">
-            <button className="hidden rounded-md bg-white px-3 py-4 text-sm text-red-600 transition-colors hover:bg-gray-400 md:block">
-              <span className="font-bold">Enroll now </span>- start learning
-            </button>
           </a>
         </div>
       </div>

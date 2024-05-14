@@ -11,10 +11,29 @@
 html,
 body {
   scroll-behavior: smooth;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Candara', Arial;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+}
+
+
+@font-face {
+  font-family: 'mistral';
+  src: url('/fonts/MISTRAL.TTF') format('TTF');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Candara';
+  src: url('/fonts/Candara.ttf') format('TTF');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 , h2, h3, h4, h5, h6 {
+  font-family: 'mistral', serif;
 }
 
 .dropdown .dropbtn {
@@ -22,7 +41,7 @@ body {
   font-weight: normal;
   border: none;
   outline: none;
-  color: white;
+  color:black;
   background-color: inherit;
   font-family: inherit;
 }

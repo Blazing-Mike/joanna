@@ -3,334 +3,346 @@ import { Image } from "astro:assets";
 import logo from "../assets/logo.png";
 ---
 
-<section id="pricing" class="md:mb-24">
-  <div class="flex items-center gap-4 mb-5">
-    <Image src={logo} alt="logo" class="w-10 h-10" />
-    <h3 class="text-3xl md:text-5xl font-bold my-8 text-red-600 uppercase">
-      Pricing
-    </h3>
-  </div>
-
-  <div
-    class="flex flex-col md:flex-row justify-center items-center gap-4 mt-10"
-  >
-    <div class="border-2 border-zinc-900 relative rounded-lg w-80 md:w-80 p-6">
-      <h3 class="text-xl font-medium my-4 capitalize">Individual lesson</h3>
-      <p class="text-4xl font-bold mt-4 mb-6">
-        PLN 110 <span class="text-xl font-normal">/session</span>
-      </p>
-      <ul class="text-center">
-        <div class="flex items-center gap-2 text-lg mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          The lesson last 60 minutes
-        </div>
-        <div class="flex items-center gap-2 text-lg mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          Online or stationery
-        </div>
-        <div class="flex items-center gap-2 text-lg mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          Free show lesson
-        </div>
-        <div class="flex items-center gap-2 text-lg mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          100% Attention for you
-        </div>
-      </ul>
-      <button class="bg-red-900 text-white w-full py-2 mt-4 rounded"
-        >sign up</button
+<section id="pricing" class="md:mb-24 bg-red-50 py-20 ">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center gap-4">
+      <Image src={logo} alt="logo" class="w-10 h-10" />
+      <h3
+        class="text-3xl text-center md:text-5xl font-bold my-8 text-red-600 uppercase"
       >
+        Pricing
+      </h3>
     </div>
 
-    <div class="border-2 border-zinc-900 relative rounded-lg w-80 md:w-80 p-6">
-      <h3 class="text-xl font-medium my-4 capitalize">Individual lesson</h3>
-      <p class="text-4xl font-bold mt-4 mb-6">
-        PLN 110 <span class="text-xl font-normal">/session</span>
-      </p>
-      <ul class="text-center">
-        <div class="flex items-center gap-2 text-lg mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          The lesson last 60 minutes
-        </div>
-        <div class="flex items-center gap-2 text-lg mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          Online or stationery
-        </div>
-        <div class="flex items-center gap-2 text-lg mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          Free show lesson
-        </div>
-        <div class="flex items-center gap-2 text-lg mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          100% Attention for you
-        </div>
-      </ul>
-      <button class="bg-red-900 text-white w-full py-2 mt-4 rounded"
-        >sign up</button
+    <div
+      class="flex flex-col md:flex-row justify-center items-center gap-4 mt-10"
+    >
+      <div
+        class="border-2 border-zinc-900 relative rounded-lg w-80 md:w-80 p-6"
       >
-    </div>
+        <p class="text-xl font-bold my-4 capitalize">Individual lesson</p>
+        <p class="text-4xl font-bold mt-4 mb-6">
+          PLN 110 <span class="text-xl font-normal">/session</span>
+        </p>
+        <ul class="text-center">
+          <div class="flex items-center gap-2 text-lg mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            The lesson last 60 minutes
+          </div>
+          <div class="flex items-center gap-2 text-lg mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            Online or stationery
+          </div>
+          <div class="flex items-center gap-2 text-lg mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            Free show lesson
+          </div>
+          <div class="flex items-center gap-2 text-lg mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            100% Attention for you
+          </div>
+        </ul>
+        <button class="bg-red-900 text-white w-full py-2 mt-4 rounded"
+          >sign up</button
+        >
+      </div>
 
-    <div class="border-2 border-zinc-900 relative rounded-lg w-80 md:w-80 p-6">
-      <h3 class="text-xl font-medium my-4 capitalize">Individual lesson</h3>
-      <p class="text-4xl font-bold mt-4 mb-6">
-        PLN 110 <span class="text-xl font-normal">/session</span>
-      </p>
-      <ul class="text-center">
-        <div class="flex items-center gap-2 text-lg mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          The lesson last 60 minutes
-        </div>
-        <div class="flex items-center gap-2 text-lg mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          Online or stationery
-        </div>
-        <div class="flex items-center gap-2 text-lg mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          Free show lesson
-        </div>
-        <div class="flex items-center gap-2 text-lg mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          100% Attention for you
-        </div>
-      </ul>
-      <button class="bg-red-900 text-white w-full py-2 mt-4 rounded"
-        >sign up</button
+      <div
+        class="border-2 border-zinc-900 relative rounded-lg w-80 md:w-80 p-6"
       >
-    </div>
-    <div class="border-2 border-zinc-900 relative rounded-lg w-80 md:w-80 p-6">
-      <h3 class="text-xl font-medium my-4 capitalize">Individual lesson</h3>
-      <p class="text-4xl font-bold mt-4 mb-6">
-        PLN 110 <span class="text-xl font-normal">/session</span>
-      </p>
-      <ul class="text-center">
-        <div class="flex items-center gap-2 md:text-lg text-base mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          The lesson last 60 minutes
-        </div>
-        <div class="flex items-center gap-2 md:text-lg text-base mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          Online or stationery
-        </div>
-        <div class="flex items-center gap-2 md:text-lg text-base mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          Free show lesson
-        </div>
-        <div class="flex items-center gap-2 md:text-lg text-base mb-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="text-xl text-red-600"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
-              points="22 4 12 14.01 9 11.01"></polyline></svg
-          >
-          100% Attention for you
-        </div>
-      </ul>
-      <button class="bg-red-900 text-white w-full py-2 mt-4 rounded"
-        >sign up</button
+      <p class="text-xl font-bold my-4 capitalize">Individual lesson</p>
+        <p class="text-4xl font-bold mt-4 mb-6">
+          PLN 110 <span class="text-xl font-normal">/session</span>
+        </p>
+        <ul class="text-center">
+          <div class="flex items-center gap-2 text-lg mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            The lesson last 60 minutes
+          </div>
+          <div class="flex items-center gap-2 text-lg mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            Online or stationery
+          </div>
+          <div class="flex items-center gap-2 text-lg mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            Free show lesson
+          </div>
+          <div class="flex items-center gap-2 text-lg mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            100% Attention for you
+          </div>
+        </ul>
+        <button class="bg-red-900 text-white w-full py-2 mt-4 rounded"
+          >sign up</button
+        >
+      </div>
+
+      <div
+        class="border-2 border-zinc-900 relative rounded-lg w-80 md:w-80 p-6"
       >
+      <p class="text-xl font-bold my-4 capitalize">Individual lesson</p>
+        <p class="text-4xl font-bold mt-4 mb-6">
+          PLN 110 <span class="text-xl font-normal">/session</span>
+        </p>
+        <ul class="text-center">
+          <div class="flex items-center gap-2 text-lg mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            The lesson last 60 minutes
+          </div>
+          <div class="flex items-center gap-2 text-lg mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            Online or stationery
+          </div>
+          <div class="flex items-center gap-2 text-lg mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            Free show lesson
+          </div>
+          <div class="flex items-center gap-2 text-lg mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            100% Attention for you
+          </div>
+        </ul>
+        <button class="bg-red-900 text-white w-full py-2 mt-4 rounded"
+          >sign up</button
+        >
+      </div>
+      <div
+        class="border-2 border-zinc-900 relative rounded-lg w-80 md:w-80 p-6"
+      >
+      <p class="text-xl font-bold my-4 capitalize">Individual lesson</p>
+        <p class="text-4xl font-bold mt-4 mb-6">
+          PLN 110 <span class="text-xl font-normal">/session</span>
+        </p>
+        <ul class="text-center">
+          <div class="flex items-center gap-2 md:text-lg text-base mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            The lesson last 60 minutes
+          </div>
+          <div class="flex items-center gap-2 md:text-lg text-base mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            Online or stationery
+          </div>
+          <div class="flex items-center gap-2 md:text-lg text-base mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            Free show lesson
+          </div>
+          <div class="flex items-center gap-2 md:text-lg text-base mb-2">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-xl text-red-600"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                points="22 4 12 14.01 9 11.01"></polyline></svg
+            >
+            100% Attention for you
+          </div>
+        </ul>
+        <button class="bg-red-900 text-white w-full py-2 mt-4 rounded"
+          >sign up</button
+        >
+      </div>
     </div>
   </div>
 </section>

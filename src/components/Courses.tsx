@@ -1,14 +1,13 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FiArrowRight } from "react-icons/fi";
 
 export const AccordionSolutions = () => {
   const [open, setOpen] = useState(solutions[0].id);
   return (
-    <section className="py-12 bg-white" id="courses">
+    <section className="py-12 md:py-20 bg-white" id="courses">
       <div className="w-full max-w-7xl mx-auto">
         <div>
-          <h3 className="text-4xl font-bold mb-8">Course Type</h3>
+          <h3 className="text-3xl md:text-5xl font-bold mb-8 uppercase text-red-600">Course Type</h3>
           <div className="flex flex-col gap-4">
             {solutions.map((q) => {
               return (
@@ -44,14 +43,14 @@ const Solution = ({
 }: SolutionProps) => {
   const isOpen = index === open;
 
- function MobileOrDesktop() {
-  if(window){
-    if(window?.innerWidth < 768) {
-      return "1350px"
-    } else {
-      return "440px"
+  function MobileOrDesktop() {
+    if (window) {
+      if (window?.innerWidth < 768) {
+        return "1350px";
+      } else {
+        return "440px";
+      }
     }
-  }
   }
 
   return (
@@ -72,7 +71,7 @@ const Solution = ({
             animate={{
               color: isOpen ? "rgba(0, 0, 0, 0)" : "rgba(0, 0, 0, 1)",
             }}
-            className="text-xl md:text-2xl font-semibold w-fit bg-gradient-to-r from-red-600 to-black bg-clip-text"
+            className="text-lg font-semibold w-fit bg-gradient-to-r from-red-600 to-black bg-clip-text"
           >
             {title}
           </motion.p>
@@ -92,14 +91,13 @@ const Solution = ({
             })}
           </motion.p>
         </div>
-     
       </motion.div>
       <motion.div
         initial={false}
         animate={{
           opacity: isOpen ? 1 : 0,
         }}
-        className="absolute inset-0 z-10 bg-gradient-to-r from-red-600 to-red-600 "
+        className="absolute inset-0 z-10 bg-red-600"
       />
       <div className="absolute inset-0 z-0 bg-slate-200" />
     </div>
