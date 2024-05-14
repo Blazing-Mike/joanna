@@ -1,11 +1,17 @@
 ---
 import Hero from "../components/Hero.astro";
+import Header from "../components/Header.astro";
+import Pricing from "../components/Pricing.astro";
 import Layout from "../layouts/Layout.astro";
+import AccordionSolutions from "../components/Courses";
 ---
 
 <Layout>
-  <main>
+  <Header />
+  <main class="px-4">
     <Hero />
+    <AccordionSolutions client:only/>
+    <Pricing/>
   </main>
 </Layout>
 
