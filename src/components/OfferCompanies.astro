@@ -1,0 +1,127 @@
+---
+import { Image } from "astro:assets";
+import one from "../assets/1.jpeg";
+import two from "../assets/2.jpeg";
+import three from "../assets/3.jpeg";
+import logo from "../assets/logo.png";
+---
+
+<section id="offer-for-companies" class="my-5 md:my-32">
+  <div class="flex items-center gap-4 mb-10">
+    <Image src={logo} alt="logo" class="w-10 h-10" />
+    <h3 class="text-2xl md:text-5xl font-bold text-red-600">
+      OFFER FOR COMPANIES
+    </h3>
+  </div>
+
+  <div class="flex w-full md:mt-10 flex-wrap overflow-hidden justify-center">
+    <Image
+      src={one}
+      alt="logo"
+      class="w-full md:w-1/2 h-full md:h-auto md:object-cover"
+    />
+
+    <div class="text-container bg-[#f8f8f8] p-4 w-[50%]">
+      <h4 class="text-2xl md:text-4xl font-semibold my-2">About the course</h4>
+      <ul class="list-disc p-4">
+        <li class="mb-2">Classes are held once or twice a week,</li>
+        <li class="mb-2">
+          Employees are divided into small groups by level advancement,
+        </li>
+        <li class="mb-2">
+          Teaching materials are individually developed for needs given group,
+        </li>
+        <li class="mb-2">
+          We learn specific concepts tailored to the situation business
+          discussed during classes,
+        </li>
+        <li class="mb-2">
+          We use recordings, films, props, we work in pairs playing scenes,
+        </li>
+        <li class="mb-2">
+          We do not waste time – the ability to check learning progress in
+          reliable periodic tests,
+        </li>
+        <li class="mb-2">Working together on projects in English,</li>
+        <li class="mb-2">
+          In a pleasant atmosphere, without stress with a large dose of humor –
+          but to the goal!
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div
+    class="flex w-full flex-wrap-reverse overflow-hidden justify-center md:mt-10 mt-5"
+  >
+    <div class="text-container bg-[#f8f8f8] p-4 w-[50%]">
+      <h4 class="text-2xl md:text-4xl font-semibold my-2">Good decision</h4>
+      <ul class="list-disc p-4">
+        <li class="mb-2">
+          English is needed in professional and private life. It has become a
+          language that people around the world communicate with,
+        </li>
+        <li class="mb-2">
+          Your employees improving their skills communication opens the door to
+          your new business,
+        </li>
+
+        <li class="mb-2">
+          We do not waste time – the ability to check learning progress in
+          reliable periodic tests,
+        </li>
+        <li class="mb-2">
+          Huge motivation and employee satisfaction, especially those who do not
+          have time for the course after working hours,
+        </li>
+        <li class="mb-2">
+          Currently English courses organized by the workplace becomes a
+          standard benefit for employees. The price of the course can be divide
+          between employee and employer.
+        </li>
+      </ul>
+    </div>
+
+    <Image
+      src={two}
+      alt="logo"
+      class="w-full md:w-1/2 h-full md:h-auto md:object-cover"
+    />
+  </div>
+
+  <div
+    class="flex w-full flex-wrap overflow-hidden justify-center md:mt-10 mt-5"
+  >
+    <Image
+      src={three}
+      alt="logo"
+      class="w-full md:w-1/2 h-full md:h-auto md:object-cover"
+    />
+
+    <div class="text-container bg-[#f8f8f8] p-4 w-[50%]">
+      <h4 class="text-2xl md:text-4xl font-semibold my-2">About the course</h4>
+      <ol class="list-decimal p-4">
+        <li class="mb-2">We meet to discuss your needs and possibilities,</li>
+        <li class="mb-2">
+          We sign a contract for a semi-annual or annual course,
+        </li>
+        <li class="mb-2">
+          I organize a meeting with the employees I assign to individual groups
+          in terms of advancement,
+        </li>
+        <li class="mb-2">
+          We set the number of groups and hours of classes at your company or
+          online,
+        </li>
+        <li class="mb-2">We start the course!</li>
+        <li class="mb-2">
+          Focusing on needs, I will individually adapt the course to the needs
+          and profile of the company. I will teach how to implement issues from
+          Business English effectively present the offer in English, present the
+          company profile, conduct a loose small-talk conversation, present
+          goals and requirements, describe design
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>

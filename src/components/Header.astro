@@ -1,29 +1,9 @@
 ---
-import { RoundedDrawerNav } from "./Nav";
+import Navigation  from "./Nav.tsx";
 ---
 
-<div class="bg-neutral-950">
-  <RoundedDrawerNav
-    client:load
-    links={[
-      {
-        title: "Course type",
-        href: "course-type",
-      },
-      {
-        title: "Offer for companies",
-        href: "offer-for-companies",
-      },
-      {
-        title: "Pricing",
-        href: "pricing",
-
-      },
-      {
-        title: "Contact",
-        href: "contact",
-      },
-    ]}
-    navBackground="bg-[#780404]"
-  />
+<div class="bg-red-900">
+<Navigation client:load/>
 </div>
+
+

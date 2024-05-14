@@ -5,7 +5,7 @@ import { FiArrowRight } from "react-icons/fi";
 export const AccordionSolutions = () => {
   const [open, setOpen] = useState(solutions[0].id);
   return (
-    <section className="py-12 bg-white" id="course-type">
+    <section className="py-12 bg-white" id="courses">
       <div className="w-full max-w-7xl mx-auto">
         <div>
           <h3 className="text-4xl font-bold mb-8">Course Type</h3>
@@ -62,7 +62,7 @@ const Solution = ({
       <motion.div
         initial={false}
         animate={{
-          height: isOpen ? MobileOrDesktop() : "72px",
+          height: isOpen ? "100%" : "72px",
         }}
         className="p-6 rounded-[7px] bg-white flex flex-col justify-between relative z-20"
       >

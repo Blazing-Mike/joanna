@@ -1,117 +1,80 @@
-import { AnimatePresence, motion } from "framer-motion";
-import React, { useState } from "react";
-import { FiMenu } from "react-icons/fi";
+import { useState } from "react";
 
-interface NavProps {
-  navBackground: string;
-  links: any;
-}
-
-export const RoundedDrawerNav = ({ navBackground, links }: NavProps) => {
-  const [hovered, setHovered] = useState(null);
-  const [mobileNavOpen, setMobileNavOpen] = useState(false);
-
-
+function Navigation() {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
-      <nav
-        onMouseLeave={() => setHovered(null)}
-        className={`${navBackground} md:p-8 p-4`}
-      >
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-5">
-            <Logo />
-            <DesktopLinks
-              links={links}
-              setHovered={setHovered}
-              hovered={hovered}
-            />
-          </div>
-          <button className="hidden rounded-md bg-white px-3 py-4 text-sm text-red-600 transition-colors hover:bg-gray-400 md:block">
-            <span className="font-bold">Enroll now </span>- start learning
-          </button>
-          <button
-            onClick={() => setMobileNavOpen((pv) => !pv)}
-            className="mt-0.5 block text-2xl text-neutral-50 md:hidden"
-          >
-            <FiMenu />
-          </button>
-        </div>
-        <MobileLinks links={links} open={mobileNavOpen} />
-      </nav>
-    </>
-  );
-};
-
-const Logo = () => {
-  return <img src="/src/assets/logo.png" alt="logo" className="w-12 h-12" />;
-};
-
-interface DesktopLinksProps {
-  links: any;
-  setHovered: React.Dispatch<React.SetStateAction<any>>;
-  hovered: any;
-}
-
-const DesktopLinks = ({ links, setHovered, hovered }: DesktopLinksProps) => {
-  return (
-    <div className="ml-9 mt-0.5 hidden md:block">
-      <div className="flex gap-6">
-        {links.map((l: any) => (
-          <TopLink key={l.title} setHovered={setHovered} title={l.title} href={l.href}>
-            {l.title}
-          </TopLink>
-        ))}
+    <nav className="flex items-center justify-between flex-wrap p-6">
+      <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
+        <img
+          src="/src/assets/logo.png"
+          className="w-100 h-10 mr-2"
+          alt="Logo"
+        />
       </div>
-    </div>
-  );
-};
-
-const MobileLinks = ({ links, open }: { links: any; open: boolean }) => {
-  return (
-    <AnimatePresence mode="popLayout">
-      {open && (
-        <motion.div
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          exit={{
-            opacity: 0,
-          }}
-          className="grid grid-cols-2 gap-6 py-6 md:hidden"
+      <div className="block lg:hidden">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
         >
-          {links.map((l: any) => {
-            return (
-              <div key={l.title} className="space-y-1.5">
-                <span className="text-md block font-semibold text-neutral-50">
-                  {l.title}
-                </span>
-              </div>
-            );
-          })}
-        </motion.div>
-      )}
-    </AnimatePresence>
+          <svg
+            className={`fill-current h-5 w-5 ${isOpen ? "hidden" : "block"}`}
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+          <svg
+            className={`fill-current h-5 w-5 ${isOpen ? "block" : "hidden"}`}
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+          </svg>
+        </button>
+      </div>
+      <div
+        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
+      >
+        <div className="text-sm lg:flex-grow">
+          <div className="dropdown">
+            <button className="dropbtn text-lg">Course Type</button>
+            <div className="dropdown-content">
+              <a href="index.html#courses">individual</a>
+              <a href="index.html#courses"> In a group of 2 to 4 people</a>
+              <a href="index.html#courses">Preparing for the exam</a>
+              <a href="index.html#courses">High school</a>
+              <a href="index.html#courses">Native Saturday</a>
+            </div>
+          </div>
+          <a
+            href="#offer-for-companies"
+            className="block mt-12 lg:inline-block lg:mt-0 text-white mr-4 text-lg"
+          >
+            Offer for companies
+          </a>
+          <a
+            href="#pricing"
+            className="block mt-3 lg:inline-block lg:mt-0 text-white mr-4 text-lg"
+          >
+            Price list
+          </a>
+          <a
+            href="#gallery"
+            className="block mt-3 lg:inline-block lg:mt-0 text-white mr-4 text-lg"
+          >
+            Gallery
+          </a>
+        </div>
+        <div>
+          <a href="#contact">
+            <button className="hidden rounded-md bg-white px-3 py-4 text-sm text-red-600 transition-colors hover:bg-gray-400 md:block">
+              <span className="font-bold">Enroll now </span>- start learning
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
   );
-};
-
-interface TopLinkProps {
-  children: React.ReactNode;
-  setHovered: React.Dispatch<React.SetStateAction<any>>;
-  title: string;
-  href: string;
 }
-
-const TopLink = ({ children, setHovered, title, href }: TopLinkProps) => (
-  <a
-  href={`#${href}`}
-    onMouseEnter={() => setHovered(title)}
-    className="cursor-pointer text-neutral-50 transition-colors hover:text-neutral-400"
-  >
-    {children}
-  </a>
-);
+export default Navigation;
